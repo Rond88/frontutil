@@ -1,0 +1,21 @@
+<h1>Blog</h1>
+
+<table>
+    <thead>
+        <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Contenido</th>
+        <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (oBlog of oPage?.content; track oBlog.id) {
+        <tr>
+            <td>{{ oBlog.id }}</td>
+            <td>{{ oBlog.titulo }}</td>
+            <td>{{ oBlog.contenido }}</td>
+        </tr>
+        }
+    </tbody>
+</table>
